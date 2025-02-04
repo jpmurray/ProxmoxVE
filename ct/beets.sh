@@ -14,8 +14,8 @@ var_tags="media"
 var_cpu="1"
 var_ram="512"
 var_disk="8"
-var_os="ubuntu"
-var_version="24.04"
+var_os="Debian"
+var_version="12"
 var_unprivileged="0"
 
 # App Output & Base Settings
