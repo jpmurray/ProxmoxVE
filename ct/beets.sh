@@ -40,7 +40,7 @@ function update_script() {
     CURRENT_VERSION="pip index versions beets | grep "INSTALLED" | awk '{print $2}'"
     AVAILABLE_VERSION="pip index versions beets | grep "LATEST" | awk '{print $2}'"
 
-    if [[ [[ "${CURRENT_VERSION}" != "AVAILABLE_VERSION" ]]; then
+    if [[ "${CURRENT_VERSION}" != "AVAILABLE_VERSION" ]]; then
         msg_info "Updating ${APP} to v${RELEASE}"
         pip install beets -U &>/dev/null
         msg_info "Updating ${APP} LXC"
